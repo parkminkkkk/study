@@ -72,6 +72,11 @@ result = model.predict([11])
 print("[11]의 예측값 : ", result)
 
 
+'''
+loss/ [11]의 예측값 
+1.7405916452407837 / [[1.8098862]] : Dense(10,9,7,5,3,1), mse, epochs=100, batch_size=2
+5.93175127505674e-06/[[0.00338175]] : Dense(10,90,70,50,30,1), mse, epochs=100, batch_size=2
+'''
 
 
 

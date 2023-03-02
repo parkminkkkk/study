@@ -36,14 +36,17 @@ model.add(Dense(1))
 
 #3. 컴파일, 훈련
 model.compile(loss='mse', optimizer='adam')
-model.fit(x, y, epochs=1000, batch_size=3)
+model.fit(x, y, epochs=1000, batch_size=3)  
+#모델의 평가는 model.fit에서 생성된 가중치로 한다. weight가 생성됨..
 
 #4. 평가, 예측
 loss = model.evaluate(x, y)
 print("loss :", loss)
 
-result = model. predict([[10, 1.4]])  # 20이 나온다면 잘 만든 것 (y데이터값)/ * 행무시, 열우선-> 열의 수에 맞춰야하므로 1행 2열로 맞춰줘야 함!!  <-([10, 1.4]) (x)
+result = model. predict([[10, 1.4]])  
 print("[10, 1.4]의 예측값 : ", result)
+# 20이 나온다면 잘 만든 것 (y데이터값)
+# *행무시, 열우선*-> 열의 수에 맞춰야하므로 1행 2열([[10, 1.4]])로 맞춰줘야 함!!  <-([10, 1.4]) (x)
 
 
 # [10, 1.4]의 예측값 :  [[20.430218]]/ Dense(30, 15,7,5,1) epochs=30, batch_size=1  

@@ -4,7 +4,8 @@ c=a+b # a와 b를 더한 값을 c라는 메모리 공간에 넣는다
 # print(c)
 print("a와 b를 더한 값:", c)
 
-# 실행 :  ctrl +F5
+
+# ctrl +F5 : 실행
 # ctrl +Z : 취소
 # ctrl +C,V : 한 라인 복붙
 # shift + Delete : 한 라인 삭제 

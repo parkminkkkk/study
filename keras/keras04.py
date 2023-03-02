@@ -1,3 +1,4 @@
+#API를 땡겨온다 -> 가독성을 좋게 하기 위해서 (이런것들을 위주로 하겠구나)
 import numpy as np
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense

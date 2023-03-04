@@ -15,6 +15,6 @@ print(y.shape) # (10, 1)
 #mlp3.py
 y = np.array([11, 12, 13, 14, 15, 16, 17, 18, 19, 20])
 print(y.shape) # (10, )
-y = y.T # (10.) 
+y = y.T # (10, ) 
 
 #행과 열 중 하나가 0일 경우, transpose해도 동일하게 됨

@@ -6,6 +6,8 @@ print("a와 b를 더한 값:", c) #print : 출력
 import tensorflow as tf # import : 포함시키다 / as tf 줄임말
 print("텐서플로 버전 : ", tf.__version__)
 
+
+#단축키
 # ctrl +F5 : 실행
 # ctrl +Z : 취소
 # ctrl +C,V : 한 라인 복붙

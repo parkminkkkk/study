@@ -116,7 +116,7 @@ print(y)
 x_train, x_test, y_train, y_test = train_test_split(
       x, y, shuffle=True, train_size=0.8, random_state=650874
       )
-                                                         #결측치 제거 후 
+                                                         #결측치 제거 후 (train_size=0.7,random_state=777일때)
 print(x_train.shape, x_test.shape) #(1021, 9) (438, 9) -> (929, 9) (399, 9)
 print(y_train.shape, y_test.shape) #(1021, ) (438,)    -> (929, ) (399, )
 

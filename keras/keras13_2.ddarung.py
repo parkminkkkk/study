@@ -118,4 +118,7 @@ submission.to_csv(path + 'submit_0306_0447.csv') #파일생성
 2/ loss :  2444.00732421875 / RMSE :  49.43689952875558 
  점 / train_size=0.8, random_state=650874, Dense(32,16,8,4,1), mse, epochs=1000, batch_size=32, verbose=1
 
+3. [0742] loss :  2412.064697265625/ r2스코어 :  0.6031572169071889/ RMSE :  49.11277445641966
+73.75점 /train_size=0.8, random_state=650874, Dense(8,4,2,1), mse, epochs=3000, batch_size=50, verbose=3
+
 '''

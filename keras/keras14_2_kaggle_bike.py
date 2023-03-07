@@ -129,6 +129,6 @@ submission.to_csv(path_save + 'submit_0307_1900.csv') #파일생성
 loss :  23589.953125
 r2 스코어 : 0.2864278237198271
 RMSE :  153.5902102898565
--train_size=0.8, random_state=124117, Dense(64, 12 'relu',32 'relu',16, 4 'relu',1), activation='relu' mse, epoch=100, batch_size=100
+train_size=0.8, random_state=124117, Dense(64, 12 'relu',32 'relu',16, 4 'relu',1), activation='relu' mse, epoch=100, batch_size=100
 
 '''

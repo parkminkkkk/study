@@ -11,8 +11,8 @@ y = np.array(range(1,17))
 #10:3:3
 
 from sklearn.model_selection import train_test_split
-x_train, x_test, y_train, y_test = train_test_split(x,y, train_size=0.625, random_state=1234)  # train, test(val포함) = 10:6으로 나눔  
-x_test, x_val, y_test, y_val = train_test_split(x_test, y_test, train_size=0.5, random_state=1234)       # test, val을 반으로 나눔 
+x_train, x_test, y_train, y_test = train_test_split(x,y, train_size=0.625, random_state=1234)          # train, test(val포함) = 10:6으로 나눔  
+x_test, x_val, y_test, y_val = train_test_split(x_test, y_test, train_size=0.5, random_state=1234)     # test, val을 반으로 나눔 
 
 
 print(x_train)  

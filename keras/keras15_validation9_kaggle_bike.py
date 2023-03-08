@@ -101,7 +101,7 @@ submission['count'] = y_submit
 print(submission)
 
 path_save = './_save/kaggle_bike/' 
-submission.to_csv(path_save + 'submit_0307_1900_val.csv') #파일생성
+submission.to_csv(path_save + 'submit_0307_1900_val.csv') # 파일생성
 
 '''
 [1900_val]

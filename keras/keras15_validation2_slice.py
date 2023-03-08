@@ -25,7 +25,6 @@ x_test = x_train[10:13] # [11,12,13]
 y_test = y_train[10:13] # [11,12,13]
 
 
-
 '''
 #2. 모델구성
 model = Sequential()

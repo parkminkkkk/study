@@ -133,5 +133,4 @@ train_size=0.9, random_state=650874, Dense(16,8,4,1), mse, epochs=2000, batch_si
 train_size=0.9, random_state=19315, Dense(8,4,2,1), mse, epochs=3000, batch_size=10, verbose=3
 11.[0819] loss :  2533.763916015625/r2스코어 :  0.5651712327634022/RMSE :  50.33650412354253
 train_size=0.8, random_state=34553, Dense(8,4,2,1), mse, epochs=1000, batch_size=100, verbose=3
-
 '''

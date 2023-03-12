@@ -11,6 +11,7 @@ from tensorflow.python.keras.models import Sequential
 from tensorflow.python.keras.layers import Dense
 from tensorflow.python.keras.callbacks import EarlyStopping
 from sklearn.metrics import accuracy_score 
+
 #1. 데이터 
 datasets = fetch_covtype()
 # print(datasets.DESCR)
@@ -22,7 +23,6 @@ print(x.shape, y.shape) #(581012, 54) (581012,)
 print('y의 라벨값 :', np.unique(y)) #y의 라벨값 : [1 2 3 4 5 6 7] 
 print(y)
 '''
-
 
 ##############################################################################
 #[one hot encoding]#

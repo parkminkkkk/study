@@ -53,6 +53,7 @@ scaler = MinMaxScaler()
 scaler.fit(x_train) #x_train범위만큼 잡아라
 x_train = scaler.transform(x_train) #변환
 #x_train의 변환 범위에 맞춰서 하라는 뜻이므로 scaler.fit할 필요x 
+#x_train = scaler.fit_transform(x_train) #위에 두줄 한줄로 합침 fit_transform
 x_test = scaler.transform(x_test) #x_train의 범위만큼 잡아서 변환하라 
 
 print(np.min(x_test), np.max(x_test)) 

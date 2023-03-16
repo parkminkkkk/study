@@ -52,17 +52,18 @@ x_test = x_test.reshape(10000,28,28,1)
 
 #2. 모델구성 
 model = Sequential()
-model.add(Conv2D(7,(3,3),
+model.add(Conv2D(10,(7,7),
                  padding='same',
                  input_shape=(28,28,1))) 
-model.add(Conv2D(filters=4, kernel_size=(2,2), 
+model.add(Conv2D(filters=5, kernel_size=(2,2), 
                  padding='valid',
                  activation='relu')) 
 model.add(Conv2D(10, (2,2))) 
 model.add(Flatten())
-model.add(Dense(16, activation='relu'))
+model.add(Dense(256, activation='relu'))
 model.add(Dropout(0.5))
-model.add(Dense(8, activation='relu'))
+model.add(Dense(128, activation='relu'))
+model.add(Dropout(0.3))
 model.add(Dense(10, activation='softmax')) #np.unique #array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]-> output_dim에 '10'
 
 
@@ -74,7 +75,7 @@ es = EarlyStopping(monitor='val_acc', patience=10, mode='max',
                    restore_best_weights=True
                    )
 
-model.fit(x_train, y_train, epochs=100, batch_size=1024, validation_split=0.2, 
+model.fit(x_train, y_train, epochs=100, batch_size=516, validation_split=0.2, 
           callbacks=(es))
 
 #4. 평가, 예측 
